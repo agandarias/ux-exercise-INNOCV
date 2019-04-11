@@ -1,0 +1,9 @@
+<mat-toolbar color="primary">
+  <span>Ux Exercise InnoCV</span>
+  <!-- This fills the remaining space of the current row -->
+  <span class="example-fill-remaining-space"></span>
+  <ul class="select_language mat-elevation-z4">
+    <li (click)="changeLanguage('es')" [ngClass]="{ active: language === 'es' }">ES</li>
+    <li (click)="changeLanguage('en')" [ngClass]="{ active: language === 'en' }">EN</li>
+  </ul>
+</mat-toolbar>
